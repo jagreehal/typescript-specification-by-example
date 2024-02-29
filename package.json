@@ -1,0 +1,32 @@
+{
+  "name": "typescript-specification-by-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+      "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test:watch": "nodemon --exec \"npm test\" --ext 'js,ts,feature' --ignore 'node_modules/'",
+    "test": "cucumber-js",
+    "only": "npm run test -- --tags @only"
+  },
+  "keywords": [],
+  "author": "Jag Reehal",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "^20.11.22",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  }
+}

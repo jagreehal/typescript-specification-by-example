@@ -1,0 +1,1 @@
+# Typescript Specification By Example
